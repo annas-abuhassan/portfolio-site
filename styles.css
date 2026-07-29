@@ -1,0 +1,512 @@
+/* ==========================================================================
+   Design tokens
+   ========================================================================== */
+:root {
+  --bg: #F7F8F6;
+  --bg-raised: #FFFFFF;
+  --ink: #14181C;
+  --ink-soft: #4A5157;
+  --line: #D8DCE0;
+  --tag-bg: #EDEFF2;
+  --blue: #2B5FA8;
+  --blue-soft: #E7EEF7;
+  --green: #3C8B6C;
+  --green-soft: #E7F2ED;
+
+  --font-display: 'Space Grotesk', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --radius: 4px;
+  --max-width: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Slim swimlane strip — a quiet nod to kanban lanes, present on every page */
+.lane-strip {
+  height: 4px;
+  display: flex;
+}
+.lane-strip span { flex: 1; }
+.lane-strip span:nth-child(1) { background: var(--blue); }
+.lane-strip span:nth-child(2) { background: var(--green); }
+.lane-strip span:nth-child(3) { background: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 0.5em 0;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+h3 { font-size: 1.25rem; }
+
+p { margin: 0 0 1em 0; color: var(--ink-soft); }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   Eyebrow / tag labels — styled like ticket/status tags, not decoration
+   ========================================================================== */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--tag-bg);
+  color: var(--ink-soft);
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.tag--blue { background: var(--blue-soft); color: var(--blue); border-color: transparent; }
+.tag--green { background: var(--green-soft); color: var(--green); border-color: transparent; }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: rgba(247, 248, 246, 0.92);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.nav__logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.nav__links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links a {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.nav__links a:hover,
+.nav__links a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 2px;
+}
+
+.nav__toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-family: var(--font-mono);
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .nav__toggle { display: block; }
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-raised);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 24px;
+    display: none;
+  }
+  .nav__links.is-open { display: flex; }
+  .nav__links li { border-bottom: 1px solid var(--line); }
+  .nav__links li:last-child { border-bottom: none; }
+  .nav__links a { display: block; padding: 14px 0; }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero {
+  padding: 96px 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero__grid > div,
+.cs-hero > .container > * {
+  animation: rise-in 0.5s ease both;
+}
+.hero__grid > div:nth-child(2) { animation-delay: 0.08s; }
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .hero__grid { grid-template-columns: 1fr; }
+}
+
+.hero__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  margin-top: 20px;
+  box-shadow: 0 6px 20px rgba(20, 24, 28, 0.08);
+}
+
+.hero__lede {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+}
+
+.hero__ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  background: var(--ink);
+  color: var(--bg);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.92;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(20, 24, 28, 0.18);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: none;
+}
+
+.btn--ghost:hover {
+  box-shadow: 0 6px 16px rgba(20, 24, 28, 0.08);
+  border-color: var(--ink);
+}
+
+/* ==========================================================================
+   Story card — the signature component
+   Styled like a real ticket: mono ID, status stripe, tag.
+   Used for case study previews AND for literal user-story quotes.
+   ========================================================================== */
+.story-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--blue);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.story-card,
+a.story-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.story-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 24, 28, 0.06);
+}
+
+.story-card--done { border-left-color: var(--green); }
+
+.story-card__id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.story-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.story-card__body { margin: 0; font-size: 0.95rem; }
+
+.story-card__tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+/* A literal "As a / I want / so that" quote block used decoratively in the hero */
+.story-quote {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.9;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+
+.story-quote span { color: var(--blue); }
+
+/* ==========================================================================
+   Grids / sections
+   ========================================================================== */
+section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+section:last-of-type { border-bottom: none; }
+
+.section__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 700px) { .grid--2 { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   Skills / certifications
+   ========================================================================== */
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.cert-card__badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-soft);
+  padding: 6px 8px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  background: var(--tag-bg);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+}
+
+/* ==========================================================================
+   Case study detail page
+   ========================================================================== */
+.cs-hero {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cs-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cs-block { padding: 48px 0; border-bottom: 1px solid var(--line); }
+.cs-block:last-of-type { border-bottom: none; }
+
+.cs-block__label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.persona-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.mockup-placeholder {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  background: var(--tag-bg);
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.user-stories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ==========================================================================
+   Footer / contact
+   ========================================================================== */
+.site-footer {
+  padding: 48px 0;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+}
+
+.contact-form label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  color: var(--ink);
+}
+
+.contact-form textarea { resize: vertical; min-height: 120px; }

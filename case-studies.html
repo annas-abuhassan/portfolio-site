@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies — Lauren Cordy</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="lane-strip"><span></span><span></span><span></span></div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Lauren Cordy</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:0; border-bottom:none;">
+    <div class="container">
+      <span class="eyebrow">Selected work</span>
+      <h1>Case studies</h1>
+      <p class="hero__lede">
+        Independent, self-directed case studies — each one follows the same structure: problem statement,
+        stakeholders, user stories, and mockups, so they're easy to compare at a glance.
+      </p>
+    </div>
+  </section>
+
+  <section style="border-bottom:none;">
+    <div class="container">
+      <div class="grid">
+        <a href="case-study-1.html" class="story-card">
+          <span class="story-card__id">CS-01 · Independent case study</span>
+          <h3 class="story-card__title">[Case study title]</h3>
+          <p class="story-card__body">[One-line problem statement.]</p>
+          <div class="story-card__tags">
+            <span class="tag tag--blue">Discovery</span>
+            <span class="tag">User Stories</span>
+          </div>
+        </a>
+        <a href="#" class="story-card story-card--done">
+          <span class="story-card__id">CS-02 · Independent case study</span>
+          <h3 class="story-card__title">[Second case study title]</h3>
+          <p class="story-card__body">[One-line problem statement.]</p>
+          <div class="story-card__tags">
+            <span class="tag tag--green">Stakeholder Mapping</span>
+            <span class="tag">Wireframes</span>
+          </div>
+        </a>
+        <a href="#" class="story-card">
+          <span class="story-card__id">CS-03 · Independent case study</span>
+          <h3 class="story-card__title">[Third case study title — optional]</h3>
+          <p class="story-card__body">[One-line problem statement.]</p>
+          <div class="story-card__tags">
+            <span class="tag tag--blue">Process Mapping</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© <span id="year"></span> Lauren Cordy.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

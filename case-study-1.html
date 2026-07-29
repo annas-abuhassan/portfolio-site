@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Case Study Title] — Lauren Cordy</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="lane-strip"><span></span><span></span><span></span></div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Lauren Cordy</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="container">
+      <div class="cs-meta">
+        <span class="tag">CS-01</span>
+        <span class="tag tag--blue">Independent case study</span>
+        <span class="tag">[Industry, e.g. Retail / FinTech / Healthcare]</span>
+      </div>
+      <h1>[Case Study Title]</h1>
+      <p class="hero__lede">
+        [One paragraph summary: what the project was, in plain terms — what you were trying to fix or
+        improve, and for whom. This is the "elevator pitch" version of the whole case study.]
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">01 · Problem statement</span>
+      <h2>What was the problem?</h2>
+      <p>
+        [Describe the situation before your involvement. What was broken, slow, unclear or costly? Be specific
+        — numbers if you have them (e.g. "support tickets about X rose 30%"), or a clear qualitative
+        description if not. This is the "why does this matter" section.]
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">02 · Stakeholders &amp; customers</span>
+      <h2>Who was affected, and who had a stake?</h2>
+      <p>[Short intro sentence on how you identified stakeholders / customer segments.]</p>
+      <div class="grid grid--2">
+        <div class="persona-card">
+          <h3>[Persona / stakeholder name, e.g. "New Customer — Priya"]</h3>
+          <p><strong>Role:</strong> [Their relationship to the problem]</p>
+          <p><strong>Goal:</strong> [What they're trying to achieve]</p>
+          <p><strong>Pain point:</strong> [What currently blocks or frustrates them]</p>
+        </div>
+        <div class="persona-card">
+          <h3>[Second persona / stakeholder, e.g. "Internal — Support Team"]</h3>
+          <p><strong>Role:</strong> [Their relationship to the problem]</p>
+          <p><strong>Goal:</strong> [What they're trying to achieve]</p>
+          <p><strong>Pain point:</strong> [What currently blocks or frustrates them]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">03 · User stories</span>
+      <h2>Requirements, in their words</h2>
+      <ul class="user-stories">
+        <li class="story-quote">
+          <span>As a</span> [type of user],<br>
+          <span>I want</span> [goal/desire],<br>
+          <span>so that</span> [benefit/reason].
+        </li>
+        <li class="story-quote">
+          <span>As a</span> [type of user],<br>
+          <span>I want</span> [goal/desire],<br>
+          <span>so that</span> [benefit/reason].
+        </li>
+        <li class="story-quote">
+          <span>As a</span> [type of user],<br>
+          <span>I want</span> [goal/desire],<br>
+          <span>so that</span> [benefit/reason].
+        </li>
+      </ul>
+      <p style="margin-top:20px;">
+        [Optional: add acceptance criteria under one story to show depth, e.g. "Given / When / Then" format.]
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">04 · Mockups &amp; wireframes</span>
+      <h2>What the solution looked like</h2>
+      <p>[One sentence on your design/wireframing approach and tools used, e.g. Figma, Balsamiq, whiteboard.]</p>
+      <div class="grid grid--2">
+        <div class="mockup-placeholder">Replace with wireframe / mockup image<br>(e.g. mockup-1.png)</div>
+        <div class="mockup-placeholder">Replace with wireframe / mockup image<br>(e.g. mockup-2.png)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block" style="border-bottom:none;">
+    <div class="container">
+      <span class="cs-block__label">05 · Outcome / what this would achieve</span>
+      <h2>Result</h2>
+      <p>
+        [If this shipped: describe the measured or observed impact. If it's a self-directed exercise:
+        be honest about that, and describe the expected impact and how you'd validate it — e.g. "this
+        would reduce onboarding drop-off by addressing X, which could be validated with a follow-up
+        usability test."]
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><a href="case-studies.html">← Back to all case studies</a></p>
+    © <span id="year"></span> Lauren Cordy.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
