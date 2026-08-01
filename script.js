@@ -26,4 +26,26 @@ document.addEventListener('DOMContentLoaded', function () {
       window.location.href = 'mailto:laurenelliscordy@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
+
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    var lightboxImg = lightbox.querySelector('img');
+    document.querySelectorAll('.cert-thumb').forEach(function (thumb) {
+      thumb.addEventListener('click', function () {
+        lightboxImg.src = thumb.src;
+        lightboxImg.alt = thumb.alt;
+        lightbox.classList.add('is-open');
+      });
+    });
+    lightbox.addEventListener('click', function () {
+      lightbox.classList.remove('is-open');
+      lightboxImg.src = '';
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('is-open');
+        lightboxImg.src = '';
+      }
+    });
+  }
 });

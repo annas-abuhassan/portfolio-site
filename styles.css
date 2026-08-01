@@ -510,3 +510,37 @@ section:last-of-type { border-bottom: none; }
 }
 
 .contact-form textarea { resize: vertical; min-height: 120px; }
+
+/* ==========================================================================
+   Certificate thumbnails + lightbox
+   ========================================================================== */
+.cert-thumb {
+  cursor: zoom-in;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cert-thumb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 24, 28, 0.12);
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 24, 28, 0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  z-index: 100;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.is-open { display: flex; }
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
