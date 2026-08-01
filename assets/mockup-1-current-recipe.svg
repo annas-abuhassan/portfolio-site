@@ -1,0 +1,59 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="375" height="812" fill="#ffffff"/>
+  <rect x="4" y="4" width="367" height="804" rx="42" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <!-- status notch -->
+  <rect x="137" y="18" width="100" height="22" rx="11" fill="#111111"/>
+
+  <!-- title -->
+  <text x="32" y="98" font-size="24" font-weight="700" fill="#111111">Spaghetti Bolognese</text>
+  <line x1="32" y1="112" x2="343" y2="112" stroke="#dddddd" stroke-width="1"/>
+
+  <!-- step rows: alternating square (prep) / circle (cook) icons -->
+  <!-- 1 Chop onion (prep) -->
+  <rect x="32" y="134" width="40" height="40" rx="8" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="42" y1="164" x2="62" y2="144" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="159" font-size="16" fill="#222222">Chop onion</text>
+
+  <!-- 2 Fry onion (cook) -->
+  <circle cx="52" cy="204" r="20" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="40" y1="204" x2="64" y2="204" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="209" font-size="16" fill="#222222">Fry onion</text>
+
+  <!-- 3 Slice mushrooms (prep) -->
+  <rect x="32" y="234" width="40" height="40" rx="8" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="42" y1="264" x2="62" y2="244" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="259" font-size="16" fill="#222222">Slice mushrooms</text>
+
+  <!-- 4 Add mushrooms (cook) -->
+  <circle cx="52" cy="304" r="20" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="40" y1="304" x2="64" y2="304" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="309" font-size="16" fill="#222222">Add mushrooms</text>
+
+  <!-- 5 Dice carrots (prep) -->
+  <rect x="32" y="334" width="40" height="40" rx="8" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="42" y1="364" x2="62" y2="344" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="359" font-size="16" fill="#222222">Dice carrots</text>
+
+  <!-- 6 Add carrots (cook) -->
+  <circle cx="52" cy="404" r="20" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="40" y1="404" x2="64" y2="404" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="409" font-size="16" fill="#222222">Add carrots</text>
+
+  <!-- 7 Crush garlic (prep) -->
+  <rect x="32" y="434" width="40" height="40" rx="8" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="42" y1="464" x2="62" y2="444" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="459" font-size="16" fill="#222222">Crush garlic</text>
+
+  <!-- 8 Add garlic (cook) -->
+  <circle cx="52" cy="504" r="20" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <line x1="40" y1="504" x2="64" y2="504" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="509" font-size="16" fill="#222222">Add garlic</text>
+
+  <!-- note box -->
+  <rect x="32" y="560" width="311" height="56" rx="10" fill="#ffffff" stroke="#999999" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="187" y="593" font-size="13" fill="#666666" text-anchor="middle" letter-spacing="0.5">CURRENT EXPERIENCE</text>
+
+  <!-- home indicator -->
+  <rect x="137" y="782" width="100" height="5" rx="2.5" fill="#cccccc"/>
+</svg>

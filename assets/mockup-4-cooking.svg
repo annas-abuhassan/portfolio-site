@@ -1,0 +1,67 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="375" height="812" fill="#ffffff"/>
+  <rect x="4" y="4" width="367" height="804" rx="42" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <!-- status notch -->
+  <rect x="137" y="18" width="100" height="22" rx="11" fill="#111111"/>
+
+  <!-- back chevron -->
+  <path d="M44 62 L34 72 L44 82" fill="none" stroke="#333333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- title -->
+  <text x="32" y="112" font-size="26" font-weight="700" fill="#111111">Cooking</text>
+  <line x1="32" y1="126" x2="343" y2="126" stroke="#dddddd" stroke-width="1"/>
+
+  <!-- numbered steps -->
+  <!-- 1 Heat oil -->
+  <circle cx="46" cy="156" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="161" font-size="13" fill="#333333" text-anchor="middle">1</text>
+  <text x="76" y="161" font-size="16" fill="#222222">Heat oil</text>
+
+  <!-- 2 Fry onions -->
+  <circle cx="46" cy="198" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="203" font-size="13" fill="#333333" text-anchor="middle">2</text>
+  <text x="76" y="203" font-size="16" fill="#222222">Fry onions</text>
+
+  <!-- 3 Add mushrooms -->
+  <circle cx="46" cy="240" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="245" font-size="13" fill="#333333" text-anchor="middle">3</text>
+  <text x="76" y="245" font-size="16" fill="#222222">Add mushrooms</text>
+
+  <!-- 4 Add carrots -->
+  <circle cx="46" cy="282" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="287" font-size="13" fill="#333333" text-anchor="middle">4</text>
+  <text x="76" y="287" font-size="16" fill="#222222">Add carrots</text>
+
+  <!-- 5 Add garlic -->
+  <circle cx="46" cy="324" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="329" font-size="13" fill="#333333" text-anchor="middle">5</text>
+  <text x="76" y="329" font-size="16" fill="#222222">Add garlic</text>
+
+  <!-- 6 Add mince -->
+  <circle cx="46" cy="366" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="371" font-size="13" fill="#333333" text-anchor="middle">6</text>
+  <text x="76" y="371" font-size="16" fill="#222222">Add mince</text>
+
+  <!-- 7 Add tomatoes -->
+  <circle cx="46" cy="408" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="413" font-size="13" fill="#333333" text-anchor="middle">7</text>
+  <text x="76" y="413" font-size="16" fill="#222222">Add tomatoes</text>
+
+  <!-- 8 Simmer -->
+  <circle cx="46" cy="450" r="15" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="46" y="455" font-size="13" fill="#333333" text-anchor="middle">8</text>
+  <text x="76" y="455" font-size="16" fill="#222222">Simmer</text>
+
+  <!-- preparation complete badge -->
+  <rect x="32" y="500" width="200" height="36" rx="18" fill="#f5f5f5" stroke="#999999" stroke-width="1.5"/>
+  <text x="52" y="523" font-size="14" fill="#333333">&#10003;</text>
+  <text x="70" y="523" font-size="13" fill="#333333">Preparation Complete</text>
+
+  <!-- finish recipe button -->
+  <rect x="32" y="700" width="311" height="56" rx="12" fill="#111111"/>
+  <text x="187" y="734" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Finish Recipe</text>
+
+  <!-- home indicator -->
+  <rect x="137" y="782" width="100" height="5" rx="2.5" fill="#cccccc"/>
+</svg>

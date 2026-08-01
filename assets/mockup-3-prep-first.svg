@@ -1,0 +1,46 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="375" height="812" fill="#ffffff"/>
+  <rect x="4" y="4" width="367" height="804" rx="42" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <!-- status notch -->
+  <rect x="137" y="18" width="100" height="22" rx="11" fill="#111111"/>
+
+  <!-- back chevron -->
+  <path d="M44 62 L34 72 L44 82" fill="none" stroke="#333333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- title -->
+  <text x="32" y="112" font-size="26" font-weight="700" fill="#111111">Preparation</text>
+  <line x1="32" y1="126" x2="343" y2="126" stroke="#dddddd" stroke-width="1"/>
+
+  <!-- checklist -->
+  <!-- 1 Dice onion -->
+  <rect x="32" y="156" width="28" height="28" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="76" y="176" font-size="16" fill="#222222">Dice onion</text>
+
+  <!-- 2 Slice mushrooms -->
+  <rect x="32" y="208" width="28" height="28" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="76" y="228" font-size="16" fill="#222222">Slice mushrooms</text>
+
+  <!-- 3 Chop carrots -->
+  <rect x="32" y="260" width="28" height="28" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="76" y="280" font-size="16" fill="#222222">Chop carrots</text>
+
+  <!-- 4 Crush garlic -->
+  <rect x="32" y="312" width="28" height="28" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="76" y="332" font-size="16" fill="#222222">Crush garlic</text>
+
+  <!-- 5 Measure herbs -->
+  <rect x="32" y="364" width="28" height="28" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="76" y="384" font-size="16" fill="#222222">Measure herbs</text>
+
+  <!-- 6 Prepare stock -->
+  <rect x="32" y="416" width="28" height="28" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="76" y="436" font-size="16" fill="#222222">Prepare stock</text>
+
+  <!-- start cooking button -->
+  <rect x="32" y="700" width="311" height="56" rx="12" fill="#111111"/>
+  <text x="187" y="734" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Start Cooking</text>
+
+  <!-- home indicator -->
+  <rect x="137" y="782" width="100" height="5" rx="2.5" fill="#cccccc"/>
+</svg>
