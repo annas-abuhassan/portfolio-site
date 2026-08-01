@@ -72,27 +72,37 @@
       <span class="cs-block__label">02 · Stakeholders &amp; customers</span>
       <h2>Who was affected, and who had a stake?</h2>
       <p>
-        I identified the key stakeholders by considering who would use the application, who would influence
-        its success, and who would be affected by changes to the meal planning process.
+        I identified the key stakeholders through analysing the current user journey, supported by
+        observations of my own cooking experience and consideration of the teams responsible for delivering
+        and supporting the feature.
       </p>
       <div class="grid grid--2">
         <div class="persona-card">
-          <h3>Busy Couple</h3>
-          <p><strong>Role:</strong> Primary users planning meals together</p>
-          <p><strong>Goal:</strong> Plan meals once per week and share responsibility for shopping</p>
-          <p style="margin-bottom:6px;"><strong>Pain point:</strong></p>
+          <h3>Home Cook (Primary User)</h3>
+          <p><strong>Goal:</strong> Cook meals in a way that suits their personal workflow</p>
+          <p style="margin-bottom:6px;"><strong>Pain points:</strong></p>
           <ul style="margin:0;">
-            <li>Constant messaging.</li>
-            <li>Forgotten ingredients.</li>
-            <li>Duplicate shopping.</li>
-            <li>Food waste.</li>
+            <li>Constantly switching between preparation and cooking.</li>
+            <li>Feeling rushed while ingredients cook.</li>
+            <li>Needing to pause instructions.</li>
           </ul>
         </div>
         <div class="persona-card">
-          <h3>[Second persona / stakeholder, e.g. "Internal — Support Team"]</h3>
-          <p><strong>Role:</strong> [Their relationship to the problem]</p>
-          <p><strong>Goal:</strong> [What they're trying to achieve]</p>
-          <p><strong>Pain point:</strong> [What currently blocks or frustrates them]</p>
+          <h3>Product Team</h3>
+          <p><strong>Goal:</strong> Increase customer satisfaction and engagement</p>
+          <p style="margin-bottom:6px;"><strong>Pain points:</strong></p>
+          <ul style="margin:0;">
+            <li>Recipes must suit a wide range of cooking styles.</li>
+            <li>Limited personalisation within the app.</li>
+          </ul>
+        </div>
+        <div class="persona-card">
+          <h3>Customer Support</h3>
+          <p><strong>Goal:</strong> Reduce complaints relating to recipe usability</p>
+          <p style="margin-bottom:6px;"><strong>Pain points:</strong></p>
+          <ul style="margin:0;">
+            <li>Difficult to distinguish between recipe issues and user preferences.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -104,23 +114,26 @@
       <h2>Requirements, in their words</h2>
       <ul class="user-stories">
         <li class="story-quote">
-          <span>As a</span> [type of user],<br>
-          <span>I want</span> [goal/desire],<br>
-          <span>so that</span> [benefit/reason].
+          <span>As a</span> home cook,<br>
+          <span>I want</span> to choose my preferred cooking style,<br>
+          <span>so that</span> recipe instructions match how I naturally prepare meals.
         </li>
         <li class="story-quote">
-          <span>As a</span> [type of user],<br>
-          <span>I want</span> [goal/desire],<br>
-          <span>so that</span> [benefit/reason].
+          <span>As a</span> user,<br>
+          <span>I want</span> all preparation steps grouped together,<br>
+          <span>so that</span> I can finish chopping before I begin cooking.
         </li>
         <li class="story-quote">
-          <span>As a</span> [type of user],<br>
-          <span>I want</span> [goal/desire],<br>
-          <span>so that</span> [benefit/reason].
+          <span>As a</span> user,<br>
+          <span>I want</span> to switch between instruction styles at any time,<br>
+          <span>so that</span> I can choose the format that best suits the recipe.
         </li>
       </ul>
       <p style="margin-top:20px;">
-        [Optional: add acceptance criteria under one story to show depth, e.g. "Given / When / Then" format.]
+        <strong>Acceptance criteria</strong> (for the first story above)<br>
+        <em>Given</em> a recipe contains preparation and cooking steps,<br>
+        <em>when</em> I select "Prep First" mode,<br>
+        <em>then</em> all ingredient preparation steps are shown before any cooking begins.
       </p>
     </div>
   </section>
