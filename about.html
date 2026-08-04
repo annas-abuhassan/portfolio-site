@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - Lauren Cordy</title>
+<meta name="description" content="About Lauren Cordy, an aspiring Business Analyst with a background in stakeholder engagement, process improvement and PSPO I certification.">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,19 +25,24 @@
 
 <main>
   <section class="hero" style="padding-bottom:0; border-bottom:none;">
-    <div class="container">
-      <span class="eyebrow">About</span>
-      <h1>Lauren Cordy</h1>
-      <p class="hero__lede">
-        My career has given me experience working with customers, stakeholders and operational teams across
-        financial services and education. I enjoy asking questions, understanding how things work and finding
-        practical ways to improve processes. After completing my PSPO I certification and building a portfolio
-        of BA case studies, I'm now pursuing a career in Business Analysis, where I can combine analytical
-        thinking with collaboration to solve real business problems.
-      </p>
-      <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
-        <a href="assets/cv.pdf" class="btn btn--ghost">Download CV</a>
-        <a href="https://www.linkedin.com/in/laurenecordy/" class="btn btn--ghost" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">About</span>
+        <h1>Lauren Cordy</h1>
+        <p class="hero__lede">
+          My career has given me experience working with customers, stakeholders and operational teams across
+          financial services and education. I enjoy asking questions, understanding how things work and finding
+          practical ways to improve processes. After completing my PSPO I certification and building a portfolio
+          of BA case studies, I'm now pursuing a career in Business Analysis, where I can combine analytical
+          thinking with collaboration to solve real business problems.
+        </p>
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="assets/cv.pdf" class="btn btn--ghost">Download CV</a>
+          <a href="https://www.linkedin.com/in/laurenecordy/" class="btn btn--ghost" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/headshot.jpg" alt="Lauren Cordy" class="hero__photo">
       </div>
     </div>
   </section>
@@ -59,54 +65,6 @@
     </div>
   </section>
 
-  <section id="certifications">
-    <div class="container">
-      <div class="section__head">
-        <div>
-          <span class="eyebrow">Certifications</span>
-        </div>
-      </div>
-      <div class="grid grid--2">
-        <div class="cert-card" style="flex-direction:column; align-items:stretch; gap:12px;">
-          <div style="display:flex; align-items:center; gap:14px;">
-            <span class="cert-card__badge">PSPO I</span>
-            <div>
-              <strong>Professional Scrum Product Owner I - Scrum.org, 2026</strong>
-            </div>
-          </div>
-          <img src="assets/pspo-i-certificate.png" alt="Professional Scrum Product Owner I certificate - click to enlarge" class="cert-thumb" style="display:block; width:100%; max-width:220px; height:auto; margin:0 auto; border:1px solid var(--line); border-radius:4px;">
-        </div>
-        <div class="cert-card" style="flex-direction:column; align-items:stretch; gap:12px;">
-          <div style="display:flex; align-items:center; gap:14px;">
-            <span class="cert-card__badge">CFG</span>
-            <div>
-              <strong>Code First Girls CFG Degree in Data Science, 2024</strong>
-            </div>
-          </div>
-          <img src="assets/cfg-degree-data-science-certificate.png" alt="Code First Girls CFG Degree in Data Science certificate - click to enlarge" class="cert-thumb" style="display:block; width:100%; max-width:220px; height:auto; margin:0 auto; border:1px solid var(--line); border-radius:4px;">
-        </div>
-        <div class="cert-card">
-          <span class="cert-card__badge">JIRA</span>
-          <div>
-            <strong>Get the Most Out of Jira - Atlassian Learning, 2026</strong>
-          </div>
-        </div>
-        <div class="cert-card">
-          <span class="cert-card__badge">NCFE</span>
-          <div>
-            <strong>NCFE CACHE: Level 2 Certificate in Information, Advice or Guidance, 2024</strong>
-          </div>
-        </div>
-        <div class="cert-card">
-          <span class="cert-card__badge">BCS</span>
-          <div>
-            <strong>Currently studying: BCS Foundation Certificate in Business Analysis</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section style="border-bottom:none;">
     <div class="container">
       <span class="eyebrow">Background</span>
@@ -124,12 +82,8 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">© <span id="year"></span> Lauren Cordy.</div>
+  <div class="container">© <span id="year"></span> Lauren Cordy. Built to show how I think, not just what I've done.</div>
 </footer>
-
-<div class="lightbox-overlay" id="lightbox">
-  <img src="" alt="">
-</div>
 
 <script src="script.js"></script>
 </body>
