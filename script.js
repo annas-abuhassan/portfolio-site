@@ -14,19 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     year.textContent = new Date().getFullYear();
   }
 
-  var contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var message = document.getElementById('message').value;
-      var subject = encodeURIComponent('Portfolio contact from ' + name);
-      var body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
-      window.location.href = 'mailto:laurenelliscordy@gmail.com?subject=' + subject + '&body=' + body;
-    });
-  }
-
   var lightbox = document.getElementById('lightbox');
   if (lightbox) {
     var lightboxImg = lightbox.querySelector('img');
