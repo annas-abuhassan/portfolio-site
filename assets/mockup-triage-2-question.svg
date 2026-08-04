@@ -1,0 +1,42 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="375" height="812" fill="#ffffff"/>
+  <rect x="4" y="4" width="367" height="804" rx="42" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <!-- status notch -->
+  <rect x="137" y="18" width="100" height="22" rx="11" fill="#111111"/>
+
+  <!-- back chevron -->
+  <path d="M44 62 L34 72 L44 82" fill="none" stroke="#333333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- progress dots: question 1 of 5 -->
+  <circle cx="150" cy="72" r="5" fill="#111111"/>
+  <circle cx="170" cy="72" r="5" fill="#dddddd"/>
+  <circle cx="190" cy="72" r="5" fill="#dddddd"/>
+  <circle cx="210" cy="72" r="5" fill="#dddddd"/>
+  <circle cx="230" cy="72" r="5" fill="#dddddd"/>
+  <text x="187" y="98" font-size="12" fill="#999999" text-anchor="middle" letter-spacing="0.5">QUESTION 1 OF 5</text>
+
+  <!-- question -->
+  <text x="32" y="160" font-size="26" font-weight="700" fill="#111111">Is the bird</text>
+  <text x="32" y="192" font-size="26" font-weight="700" fill="#111111">bleeding?</text>
+
+  <text x="32" y="222" font-size="14" fill="#555555">Look for visible blood on the</text>
+  <text x="32" y="240" font-size="14" fill="#555555">feathers, beak or feet.</text>
+
+  <!-- Yes / No answer buttons -->
+  <rect x="32" y="284" width="311" height="64" rx="12" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <circle cx="60" cy="316" r="10" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="86" y="321" font-size="16" fill="#222222">Yes</text>
+
+  <rect x="32" y="360" width="311" height="64" rx="12" fill="#f5f5f5" stroke="#111111" stroke-width="2.5"/>
+  <circle cx="60" cy="392" r="10" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <circle cx="60" cy="392" r="5" fill="#111111"/>
+  <text x="86" y="397" font-size="16" font-weight="700" fill="#111111">No</text>
+
+  <!-- next button -->
+  <rect x="32" y="700" width="311" height="56" rx="12" fill="#111111"/>
+  <text x="187" y="734" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Next question</text>
+
+  <!-- home indicator -->
+  <rect x="137" y="782" width="100" height="5" rx="2.5" fill="#cccccc"/>
+</svg>

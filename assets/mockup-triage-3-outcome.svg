@@ -1,0 +1,39 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="375" height="812" fill="#ffffff"/>
+  <rect x="4" y="4" width="367" height="804" rx="42" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <!-- status notch -->
+  <rect x="137" y="18" width="100" height="22" rx="11" fill="#111111"/>
+
+  <text x="32" y="90" font-size="12" fill="#999999" letter-spacing="0.5">RECOMMENDATION</text>
+
+  <!-- outcome badge -->
+  <rect x="32" y="106" width="311" height="112" rx="14" fill="#f5f5f5" stroke="#111111" stroke-width="2.5"/>
+  <text x="52" y="148" font-size="22" font-weight="700" fill="#111111">Contact Lead</text>
+  <text x="52" y="176" font-size="22" font-weight="700" fill="#111111">Rescuer</text>
+  <text x="52" y="200" font-size="13" fill="#555555">Not an emergency, but needs advice</text>
+
+  <!-- why this recommendation -->
+  <text x="32" y="252" font-size="13" fill="#999999" letter-spacing="0.5">WHY THIS RECOMMENDATION</text>
+  <rect x="32" y="266" width="311" height="120" rx="10" fill="#ffffff" stroke="#dddddd" stroke-width="1.5"/>
+  <text x="48" y="292" font-size="13" fill="#333333">✓ No visible bleeding</text>
+  <text x="48" y="316" font-size="13" fill="#333333">✓ Cannot stand unaided</text>
+  <text x="48" y="340" font-size="13" fill="#333333">✓ Bright and alert</text>
+  <text x="48" y="364" font-size="13" fill="#333333">✗ Not caught by a cat</text>
+
+  <!-- other outcomes reference, greyed -->
+  <text x="32" y="420" font-size="12" fill="#999999" letter-spacing="0.5">OTHER POSSIBLE OUTCOMES</text>
+  <rect x="32" y="434" width="311" height="40" rx="8" fill="#fafafa" stroke="#eeeeee" stroke-width="1"/>
+  <text x="48" y="459" font-size="13" fill="#aaaaaa">Monitor and release</text>
+  <rect x="32" y="482" width="311" height="40" rx="8" fill="#fafafa" stroke="#eeeeee" stroke-width="1"/>
+  <text x="48" y="507" font-size="13" fill="#aaaaaa">Take to Wildlife Rescue for observation</text>
+  <rect x="32" y="530" width="311" height="40" rx="8" fill="#fafafa" stroke="#eeeeee" stroke-width="1"/>
+  <text x="48" y="555" font-size="13" fill="#aaaaaa">Emergency Vet</text>
+
+  <!-- CTA button -->
+  <rect x="32" y="700" width="311" height="56" rx="12" fill="#111111"/>
+  <text x="187" y="734" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Message Lead Rescuer</text>
+
+  <!-- home indicator -->
+  <rect x="137" y="782" width="100" height="5" rx="2.5" fill="#cccccc"/>
+</svg>

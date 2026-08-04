@@ -1,0 +1,38 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="375" height="812" fill="#ffffff"/>
+  <rect x="4" y="4" width="367" height="804" rx="42" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <!-- status notch -->
+  <rect x="137" y="18" width="100" height="22" rx="11" fill="#111111"/>
+
+  <!-- title -->
+  <text x="32" y="98" font-size="24" font-weight="700" fill="#111111">Select animal</text>
+  <text x="32" y="122" font-size="14" fill="#555555">Select the species reported in the call out.</text>
+
+  <!-- species grid: 2x3 cards -->
+  <rect x="32" y="150" width="147" height="100" rx="12" fill="#f5f5f5" stroke="#111111" stroke-width="2.5"/>
+  <circle cx="105" cy="188" r="18" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <text x="105" y="228" font-size="15" font-weight="700" fill="#111111" text-anchor="middle">Pigeon</text>
+
+  <rect x="196" y="150" width="147" height="100" rx="12" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <circle cx="269" cy="188" r="18" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="269" y="228" font-size="15" fill="#222222" text-anchor="middle">Hedgehog</text>
+
+  <rect x="32" y="266" width="147" height="100" rx="12" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <circle cx="105" cy="304" r="18" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="105" y="344" font-size="15" fill="#222222" text-anchor="middle">Gull</text>
+
+  <rect x="196" y="266" width="147" height="100" rx="12" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <circle cx="269" cy="304" r="18" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="269" y="344" font-size="15" fill="#222222" text-anchor="middle">Fox</text>
+
+  <rect x="32" y="382" width="311" height="60" rx="12" fill="#ffffff" stroke="#cccccc" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="187" y="418" font-size="15" fill="#666666" text-anchor="middle">Other / not listed</text>
+
+  <!-- continue button -->
+  <rect x="32" y="700" width="311" height="56" rx="12" fill="#111111"/>
+  <text x="187" y="734" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Continue</text>
+
+  <!-- home indicator -->
+  <rect x="137" y="782" width="100" height="5" rx="2.5" fill="#cccccc"/>
+</svg>

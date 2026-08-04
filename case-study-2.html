@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supporting Wildlife Rescue Volunteers with a Guided Triage Tool — Lauren Cordy</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="lane-strip"><span></span><span></span><span></span></div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Lauren Cordy</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="container">
+      <div class="cs-meta">
+        <span class="tag">CS-02</span>
+        <span class="tag tag--blue">Independent case study</span>
+        <span class="tag">Animal Welfare / Volunteering</span>
+      </div>
+      <h1>Supporting Wildlife Rescue Volunteers with a Guided Triage Tool</h1>
+      <p class="hero__lede">
+        Volunteer wildlife rescuers often can't tell whether an injured animal needs a vet, a wildlife rescue,
+        or can safely be left alone.
+      </p>
+      <p class="hero__lede">
+        This case study explores a guided triage tool that turns that uncertain judgement call into a short,
+        consistent set of yes/no questions.
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">01 · Problem statement</span>
+      <h2>What was the problem?</h2>
+      <p>
+        Volunteer wildlife rescuers often encounter injured animals but can be unsure whether an animal
+        requires immediate veterinary treatment, should be taken to a wildlife rescue, can safely remain where
+        it is, or needs advice from an experienced rescuer. This uncertainty can delay treatment, increase
+        pressure on experienced volunteers and result in inconsistent decision-making.
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">02 · Stakeholders &amp; customers</span>
+      <h2>Who was affected, and who had a stake?</h2>
+      <div class="grid grid--2">
+        <div class="persona-card">
+          <span class="tag tag--blue" style="margin-bottom:10px; display:inline-block;">Primary persona</span>
+          <h3>New Volunteer</h3>
+          <p><strong>Role:</strong> Responds to wildlife rescue calls with limited experience.</p>
+          <p><strong>Goal:</strong> Make the correct decision quickly and confidently.</p>
+          <p style="margin-bottom:6px;"><strong>Pain points:</strong></p>
+          <ul style="margin:0;">
+            <li>Doesn't know which symptoms are serious.</li>
+            <li>Worried about making the wrong decision.</li>
+            <li>Has to message experienced rescuers for common questions.</li>
+          </ul>
+        </div>
+        <div class="persona-card">
+          <span class="tag tag--green" style="margin-bottom:10px; display:inline-block;">Secondary stakeholder</span>
+          <h3>Lead Rescuer</h3>
+          <p><strong>Role:</strong> Provides guidance and oversees rescue decisions.</p>
+          <p><strong>Goal:</strong> Spend time on complex cases rather than answering repetitive questions.</p>
+          <p style="margin-bottom:6px;"><strong>Pain points:</strong></p>
+          <ul style="margin:0;">
+            <li>Receives frequent messages about similar situations.</li>
+            <li>Has limited time during busy periods.</li>
+            <li>Wants volunteers to make safe, consistent decisions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">03 · User stories</span>
+      <h2>Requirements, in their words</h2>
+      <ul class="user-stories">
+        <li class="story-quote">
+          <span>As a</span> new volunteer,<br>
+          <span>I want</span> to answer a series of simple yes/no questions about an injured pigeon,<br>
+          <span>so that</span> I know whether it should be taken to a wildlife rescue, an emergency vet, or
+          escalated to the lead rescuer for advice.
+        </li>
+        <li class="story-quote">
+          <span>As a</span> lead rescuer,<br>
+          <span>I want</span> volunteers to follow a consistent triage process,<br>
+          <span>so that</span> animals receive appropriate care more quickly.
+        </li>
+        <li class="story-quote">
+          <span>As a</span> volunteer,<br>
+          <span>I want</span> to understand why a recommendation has been made,<br>
+          <span>so that</span> I can build my confidence over time.
+        </li>
+      </ul>
+      <p style="margin-top:20px;">
+        <strong>Acceptance criteria</strong>
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Wildlife Rescue</strong><br>
+        <em>Given</em> a volunteer has completed the assessment,<br>
+        <em>when</em> the answers indicate the bird requires rehabilitation,<br>
+        <em>then</em> the app recommends taking the bird to the wildlife rescue.
+      </p>
+      <p style="margin-top:16px;">
+        <strong>Emergency Vet</strong><br>
+        <em>Given</em> the volunteer reports symptoms indicating an emergency (e.g. a broken leg or broken
+        wing),<br>
+        <em>when</em> the assessment is complete,<br>
+        <em>then</em> the app advises immediate transport to a veterinary practice.
+      </p>
+      <p style="margin-top:16px;">
+        <strong>Contact Lead Rescuer</strong><br>
+        <em>Given</em> the assessment does not produce a clear outcome,<br>
+        <em>when</em> the volunteer completes the questions,<br>
+        <em>then</em> the app recommends contacting the lead rescuer before taking further action.
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="container">
+      <span class="cs-block__label">04 · Mockups &amp; wireframes</span>
+      <h2>What the solution looked like</h2>
+      <p>
+        I adopted a low-fidelity wireframing approach to focus on validating the triage flow before considering
+        visual design. As with the previous case study, I used Claude AI to rapidly generate initial concepts,
+        which I reviewed and refined to ensure they aligned with the user stories and proposed solution.
+      </p>
+      <div class="grid grid--2">
+        <div>
+          <img src="assets/mockup-triage-1-species.svg" alt="Wireframe of the species selection screen, showing Pigeon, Hedgehog, Gull and Fox as options" style="width:100%; max-width:220px; display:block; margin:0 auto; border-radius:4px; border:1px solid var(--line);">
+          <p style="text-align:center; font-size:0.85rem; margin-top:8px;">1 · Select species</p>
+        </div>
+        <div>
+          <img src="assets/mockup-triage-2-question.svg" alt="Wireframe of a guided yes/no question screen, asking 'Is the bird bleeding?' with a progress indicator" style="width:100%; max-width:220px; display:block; margin:0 auto; border-radius:4px; border:1px solid var(--line);">
+          <p style="text-align:center; font-size:0.85rem; margin-top:8px;">2 · Guided question</p>
+        </div>
+        <div>
+          <img src="assets/mockup-triage-3-outcome.svg" alt="Wireframe of the outcome screen, recommending to contact the lead rescuer and showing the reasoning behind the recommendation" style="width:100%; max-width:220px; display:block; margin:0 auto; border-radius:4px; border:1px solid var(--line);">
+          <p style="text-align:center; font-size:0.85rem; margin-top:8px;">3 · Recommendation</p>
+        </div>
+      </div>
+
+      <p style="margin-top:32px;">
+        Because the recommendation itself is driven by branching logic rather than a fixed screen flow, I also
+        mapped the underlying decision process separately from the UI — the questions asked and how they
+        resolve to one of four outcome tiers.
+      </p>
+      <img src="assets/triage-decision-flow.svg" alt="Decision flow diagram showing the species selection and five yes/no questions feeding into a decision point, which branches to four outcomes: Monitor and release, Take to Wildlife Rescue for observation, Contact Lead Rescuer, or Emergency Vet" style="width:100%; margin-top:16px; border-radius:4px; border:1px solid var(--line);">
+      <p style="text-align:center; font-size:0.85rem; margin-top:8px;">4 · Triage decision logic</p>
+    </div>
+  </section>
+
+  <section class="cs-block" style="border-bottom:none;">
+    <div class="container">
+      <span class="cs-block__label">05 · Outcome / what this would achieve</span>
+      <h2>Result</h2>
+      <p>
+        This solution aims to improve confidence and consistency for new wildlife rescue volunteers by
+        providing a simple, evidence-based triage process.
+      </p>
+
+      <h3>Expected benefits</h3>
+      <ul>
+        <li>Reduced likelihood of incorrect triage decisions.</li>
+        <li>Urgent cases reach veterinary care sooner.</li>
+        <li>Experienced rescuers can focus on complex cases rather than answering repetitive questions.</li>
+        <li>Increased confidence and consistency for new volunteers making triage decisions.</li>
+      </ul>
+
+      <h3>Success measures</h3>
+      <p>If implemented, success could be measured through:</p>
+      <ul>
+        <li>Reduction in messages sent to the lead rescuer for common, repetitive questions.</li>
+        <li>Percentage of assessments that resolve to a clear recommendation without needing escalation.</li>
+        <li>Time from call-out to the animal reaching appropriate care.</li>
+        <li>Volunteer-reported confidence in their triage decisions.</li>
+        <li>Consistency of outcomes across volunteers assessing similar symptoms.</li>
+      </ul>
+
+      <p>
+        <strong>Reflection:</strong> The concept would be validated through usability testing and feedback from
+        volunteers and rescue trustees and leaders.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><a href="case-studies.html">← Back to all case studies</a></p>
+    © <span id="year"></span> Lauren Cordy.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
